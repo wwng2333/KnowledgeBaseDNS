@@ -1112,3 +1112,14 @@ Přísnější zásady filtrování s blokováním - reklamy, marketing, sledov�
 | --------------- | ----------------------------------- | -------------------------------------------------------------------------------- |
 | DNS skrze HTTPS | `https://ric.openbld.net/dns-query` | [Přidat do AdGuardu](sdns://AgAAAAAAAAAAAAAPcmljLm9wZW5ibGQubmV0Ci9kbnMtcXVlcnk) |
 | DNS skrze TLS   | `tls://ric.openbld.net`             | [Přidat do AdGuardu](sdns://AwAAAAAAAAAAAAAPcmljLm9wZW5ibGQubmV0)                |
+
+#### dns0.eu
+
+[dns0.eu](https://www.dns0.eu) je bezplatný, suverénní rekurzivní DNS řešitel v souladu s GDPR se silným zaměřením na bezpečnost s cílem chránit občany a organizace Evropské unie.
+
+| Protokol        | Adresa                           |                                                                                                                                                                           |
+| --------------- | -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4       | `193.110.81.0` and `185.253.5.0` | [Přidat do AdGuardu](adguard:add_dns_server?address=193.110.81.0&name=), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=193.110.81.0&name=)                    |
+| DNS skrze HTTPS | `https://zero.dns0.eu/`          | [Přidat do AdGuardu](sdns://AgcAAAAAAAAAAAAVaHR0cHM6Ly96ZXJvLmRuczAuZXUvCi9kbnMtcXVlcnk), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=https://zero.dns0.eu) |
+| DNS skrze TLS   | `tls://zero.dns0.eu`             | [Add to Přidat do AdGuardu](sdns://AwcAAAAAAAAAAAASdGxzOi8vemVyby5kbnMwLmV1), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=tls://zero.dns0.eu)               |
+| DNS skrze QUIC  | `quic://zero.dns0.eu`            | [Přidat do AdGuardu](adguard:add_dns_server?address=quic://quic://zero.dns0.eu), [Přidat do AdGuard VPN](adguardvpn:add_dns_server?address=quic://zero.dns0.eu)           |

@@ -143,7 +143,7 @@ Blocks phishing, spam and malicious domains.
 
 [Neustar Recursive DNS](https://www.security.neustar/digital-performance/dns-services/recursive-dns), yerleşik güvenlik ve tehdit istihbaratı ile sitelere ve çevrimiçi uygulamalara hızlı ve güvenilir erişim sağlayan ücretsiz bir bulut tabanlı özyinelemeli DNS hizmetidir.
 
-#### Reliability & Performance 1
+#### Güvenilirlik ve Performans 1
 
 These servers provide reliable and fast DNS lookups without blocking any specific categories.
 
@@ -831,7 +831,7 @@ Bu sunucular reklam engelleme sağlamaz, günlük tutmaz ve DNSSEC'yi etkinleşt
 | DNS-over-TLS       | Sağlayıcı: `Go6Lab` Ana makine adı: `tls://privacydns.go6lab.si` ve IPv6: `2001:67c:27e4::35`                              | [AdGuard'a ekle](adguard:add_dns_server?address=tls://privacydns.go6lab.si&name=privacydns.go6lab.si), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=tls://privacydns.go6lab.si&name=privacydns.go6lab.si)                 |
 | DNS-over-TLS       | Ana makine adı: `tls://dot.securedns.eu` IP: `146.185.167.43` and IPv6: `2a03:b0c0:0:1010::e9a:3001`                       | [AdGuard'a ekle](adguard:add_dns_server?address=tls://dot.securedns.eu&name=dot.securedns.eu), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=tls://dot.securedns.eu&name=dot.securedns.eu)                                 |
 
-DNS servers with minimal logging/restrictions. These servers use some logging, self-signed certs or no support for strict mode.
+DNS servers with minimal logging/restrictions. Bu sunucular bazı günlük kaydı, kendinden imzalı sertifikalar kullanır veya katı mod desteği yoktur.
 
 | Protokol     | Adres                                                                                                                   |                                                                                                                                                                                                                                                 |
 | ------------ | ----------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1087,9 +1087,9 @@ Daha gelişmiş söz dizimi sayesinde AdGuard DNS'den daha fazla reklam ve köt�
 | DNS-over-HTTPS | `https://dandelionsprout.asuscomm.com:2501/dns-query` | [AdGuard'a ekle](adguard:add_dns_server?address=https://dandelionsprout.asuscomm.com:2501/dns-query&name=dandelionsprout.asuscomm.com:2501), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=https://dandelionsprout.asuscomm.com:2501/dns-query&name=dandelionsprout.asuscomm.com:2501) |
 | DNS-over-TLS   | `tls://dandelionsprout.asuscomm.com:853`              | [AdGuard'a ekle](adguard:add_dns_server?address=tls://dandelionsprout.asuscomm.com:853&name=dandelionsprout.asuscomm.com:853), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=tls://dandelionsprout.asuscomm.com:853&name=dandelionsprout.asuscomm.com:853)                             |
 | DNS-over-QUIC  | `quic://dandelionsprout.asuscomm.com:48582`           | [AdGuard'a ekle](adguard:add_dns_server?address=quic://dandelionsprout.asuscomm.com:48582&name=dandelionsprout.asuscomm.com:48582), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=quic://dandelionsprout.asuscomm.com:48582&name=dandelionsprout.asuscomm.com:48582)                   |
-| DNS, IPv4      | Varies; see link above.                               |                                                                                                                                                                                                                                                                                                 |
-| DNS, IPv6      | Varies; see link above.                               |                                                                                                                                                                                                                                                                                                 |
-| DNSCrypt, IPv4 | Varies; see link above.                               |                                                                                                                                                                                                                                                                                                 |
+| DNS, IPv4      | Değişir; yukarıdaki bağlantıya bakın.                 |                                                                                                                                                                                                                                                                                                 |
+| DNS, IPv6      | Değişir; yukarıdaki bağlantıya bakınız.               |                                                                                                                                                                                                                                                                                                 |
+| DNSCrypt, IPv4 | Değişir; yukarıdaki bağlantıya bakınız.               |                                                                                                                                                                                                                                                                                                 |
 
 ### OpenBLD.net DNS
 
@@ -1112,3 +1112,14 @@ More strictly filtering policies with blocking - ads, marketing, tracking, malwa
 | -------------- | ----------------------------------- | ---------------------------------------------------------------------------- |
 | DNS-over-HTTPS | `https://ric.openbld.net/dns-query` | [AdGuard'a ekle](sdns://AgAAAAAAAAAAAAAPcmljLm9wZW5ibGQubmV0Ci9kbnMtcXVlcnk) |
 | DNS-over-TLS   | `tls://ric.openbld.net`             | [AdGuard'a ekle](sdns://AwAAAAAAAAAAAAAPcmljLm9wZW5ibGQubmV0)                |
+
+#### dns0.eu
+
+[dns0.eu](https://www.dns0.eu), Avrupa Birliği vatandaşlarını ve kuruluşlarını korumak için güvenliğe güçlü bir şekilde odaklanan, ücretsiz, egemen ve GDPR uyumlu bir özyinelemeli DNS çözümleyicisidir.
+
+| Protokol       | Adres                           |                                                                                                                                                                    |
+| -------------- | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| DNS, IPv4      | `193.110.81.0` ve `185.253.5.0` | [AdGuard'a ekle](adguard:add_dns_server?address=193.110.81.0&name=), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=193.110.81.0&name=)                    |
+| DNS-over-HTTPS | `https://zero.dns0.eu/`         | [AdGuard'a ekle](sdns://AgcAAAAAAAAAAAAVaHR0cHM6Ly96ZXJvLmRuczAuZXUvCi9kbnMtcXVlcnk), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=https://zero.dns0.eu) |
+| DNS-over-TLS   | `tls://zero.dns0.eu`            | [AdGuard'a ekle](sdns://AwcAAAAAAAAAAAASdGxzOi8vemVyby5kbnMwLmV1), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=tls://zero.dns0.eu)                      |
+| DNS-over-QUIC  | `quic://zero.dns0.eu`           | [AdGuard'a ekle](adguard:add_dns_server?address=quic://quic://zero.dns0.eu), [AdGuard VPN'e ekle](adguardvpn:add_dns_server?address=quic://zero.dns0.eu)           |

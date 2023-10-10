@@ -1112,3 +1112,14 @@ Mere strikse filtreringspolitikker med blokering — annoncer, marketing, tracke
 | -------------- | ----------------------------------- | ----------------------------------------------------------------------------- |
 | DNS-over-HTTPS | `https://ric.openbld.net/dns-query` | [Føj til AdGuard](sdns://AgAAAAAAAAAAAAAPcmljLm9wZW5ibGQubmV0Ci9kbnMtcXVlcnk) |
 | DNS-over-TLS   | `tls://ric.openbld.net`             | [Føj til AdGuard](sdns://AwAAAAAAAAAAAAAPcmljLm9wZW5ibGQubmV0)                |
+
+#### dns0.eu
+
+[dns0.eu](https://www.dns0.eu) er en gratis, suveræn og GDPR-kompatibel rekursiv DNS-opløser med et stærkt fokus på sikkerhed for at beskytte borgerne og organisationerne i EU.
+
+| Protokol       | Adresse                         |                                                                                                                                                                      |
+| -------------- | ------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DNS, IPv4      | `193.110.81.0` og `185.253.5.0` | [Føj til AdGuard](adguard:add_dns_server?address=193.110.81.0&name=), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=193.110.81.0&name=)                    |
+| DNS-over-HTTPS | `https://zero.dns0.eu/`         | [Føj til AdGuard](sdns://AgcAAAAAAAAAAAAVaHR0cHM6Ly96ZXJvLmRuczAuZXUvCi9kbnMtcXVlcnk), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=https://zero.dns0.eu) |
+| DNS-over-TLS   | `tls://zero.dns0.eu`            | [Føj til AdGuard](sdns://AwcAAAAAAAAAAAASdGxzOi8vemVyby5kbnMwLmV1), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=tls://zero.dns0.eu)                      |
+| DNS-over-QUIC  | `quic://zero.dns0.eu`           | [Føj til AdGuard](adguard:add_dns_server?address=quic://quic://zero.dns0.eu), [Føj til AdGuard VPN](adguardvpn:add_dns_server?address=quic://zero.dns0.eu)           |

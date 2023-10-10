@@ -25,7 +25,7 @@ DNS API belgeleri
 
 ##### Özet
 
-Gets account limits
+Hesap limitlerini alır
 
 ##### Yanıtlar
 
@@ -90,9 +90,9 @@ Mevcut bir cihazı kimliğe göre alır
 
 ##### Parametreler
 
-| Ad            | Konumlandığı yer | Açıklama | Gerekli | Şema |
-| ------------- | ---------------- | -------- | ------- | ---- |
-| cihaz_kimliği | yol              |          | Evet    | dize |
+| Ad            | Konumlandığı yer | Açıklama | Gerekli | Şema   |
+| ------------- | ---------------- | -------- | ------- | ------ |
+| cihaz_kimliği | yol              |          | Evet    | string |
 
 ##### Yanıtlar
 
@@ -105,13 +105,13 @@ Mevcut bir cihazı kimliğe göre alır
 
 ##### Özet
 
-Updates an existing device
+Mevcut bir cihazı günceller
 
 ##### Parametreler
 
-| İsim      | Konumlandığı yer | Açıklama | Gerekli | Şema |
-| --------- | ---------------- | -------- | ------- | ---- |
-| device_id | yol              |          | Evet    | dize |
+| İsim      | Konumlandığı yer | Açıklama | Gerekli | Şema   |
+| --------- | ---------------- | -------- | ------- | ------ |
+| device_id | yol              |          | Evet    | string |
 
 ##### Yanıtlar
 
@@ -133,16 +133,16 @@ Gets DNS-over-HTTPS .mobileconfig file.
 
 | İsim                    | Konumlandığı yer | Açıklama                                                                       | Gerekli | Şema       |
 | ----------------------- | ---------------- | ------------------------------------------------------------------------------ | ------- | ---------- |
-| cihaz_kimliği           | yol              |                                                                                | Evet    | dize       |
+| cihaz_kimliği           | yol              |                                                                                | Evet    | string     |
 | exclude_wifi_networks | sorgu            | List Wi-Fi networks by their SSID in which you want AdGuard DNS to be disabled | Hayır   | [ string ] |
 | exclude_domain          | sorgu            | List domains that will use default DNS servers instead of AdGuard DNS          | Hayır   | [ string ] |
 
 ##### Yanıtlar
 
-| Kod | Açıklama                   |
-| --- | -------------------------- |
-| 200 | DNS-over-HTTPS .plist file |
-| 404 | Cihaz bulunamadı           |
+| Kod | Açıklama                      |
+| --- | ----------------------------- |
+| 200 | DNS-over-HTTPS .plist dosyası |
+| 404 | Cihaz bulunamadı              |
 
 ### /oapi/v1/devices/{device_id}/dot.mobileconfig
 
@@ -150,7 +150,7 @@ Gets DNS-over-HTTPS .mobileconfig file.
 
 ##### Özet
 
-Gets DNS-over-TLS .mobileconfig file.
+DNS-over-TLS .mobileconfig dosyasını alır.
 
 ##### Parametreler
 
@@ -162,10 +162,10 @@ Gets DNS-over-TLS .mobileconfig file.
 
 ##### Yanıtlar
 
-| Kod | Açıklama                   |
-| --- | -------------------------- |
-| 200 | DNS-over-HTTPS .plist file |
-| 404 | Cihaz bulunamadı           |
+| Kod | Açıklama                      |
+| --- | ----------------------------- |
+| 200 | DNS-over-HTTPS .plist dosyası |
+| 404 | Cihaz bulunamadı              |
 
 ### /oapi/v1/devices/{device_id}/settings
 
@@ -177,9 +177,9 @@ Cihaz ayarlarını günceller
 
 ##### Parametreler
 
-| İsim      | Konumlandığı yer | Açıklama | Gerekli | Şema |
-| --------- | ---------------- | -------- | ------- | ---- |
-| device_id | yol              |          | Evet    | dize |
+| İsim      | Konumlandığı yer | Açıklama | Gerekli | Şema   |
+| --------- | ---------------- | -------- | ------- | ------ |
+| device_id | yol              |          | Evet    | string |
 
 ##### Yanıtlar
 
@@ -219,11 +219,11 @@ Yeni bir DNS sunucusu oluşturur. You can attach custom settings, otherwise DNS 
 
 ##### Yanıtlar
 
-| Kod | Açıklama                            |
-| --- | ----------------------------------- |
-| 200 | DNS sunucusu oluşturuldu            |
-| 400 | Doğrulama başarısız                 |
-| 429 | DNS servers count reached the limit |
+| Kod | Açıklama                        |
+| --- | ------------------------------- |
+| 200 | DNS sunucusu oluşturuldu        |
+| 400 | Doğrulama başarısız             |
+| 429 | DNS sunucu sayısı sınıra ulaştı |
 
 ### /oapi/v1/dns_servers/{dns_server_id}
 
@@ -299,9 +299,9 @@ DNS sunucusu ayarlarını günceller
 
 ##### Parametreler
 
-| İsim            | Konumlandığı yer | Açıklama | Gerekli | Şema |
-| --------------- | ---------------- | -------- | ------- | ---- |
-| dns_server_id | yol              |          | Evet    | dize |
+| İsim            | Konumlandığı yer | Açıklama | Gerekli | Şema   |
+| --------------- | ---------------- | -------- | ------- | ------ |
+| dns_server_id | yol              |          | Evet    | string |
 
 ##### Yanıtlar
 
@@ -368,7 +368,7 @@ Sorgu günlüğünü alır
 | İsim               | Konumlandığı yer | Açıklama                                                                         | Gerekli | Şema                                                |
 | ------------------ | ---------------- | -------------------------------------------------------------------------------- | ------- | --------------------------------------------------- |
 | time_from_millis | sorgu            | Time from in milliseconds (inclusive)                                            | Evet    | uzun                                                |
-| time_to_millis   | sorgu            | Milisaniye cinsinden süre (dahil)                                                | Evet    | uzun                                                |
+| time_to_millis   | sorgu            | Milisaniye cinsinden süre (dahil)                                                | Evet    | long                                                |
 | cihazlar           | sorgu            | Cihazlara göre filtrele                                                          | Hayır   | [ string ]                                          |
 | ülkeler            | sorgu            | Ülkelere göre filtrele                                                           | Hayır   | [ string ]                                          |
 | şirketler          | sorgu            | Şirketlere göre filtrele                                                         | Hayır   | [ string ]                                          |
@@ -394,9 +394,9 @@ Revokes a Refresh Token
 
 ##### Parametreler
 
-| İsim          | Konumlandığı yer | Açıklama      | Gerekli | Şema |
-| ------------- | ---------------- | ------------- | ------- | ---- |
-| refresh_token | sorgu            | Refresh Token | Evet    | dize |
+| İsim          | Konumlandığı yer | Açıklama      | Gerekli | Şema   |
+| ------------- | ---------------- | ------------- | ------- | ------ |
+| refresh_token | sorgu            | Refresh Token | Evet    | string |
 
 ##### Yanıtlar
 
@@ -581,7 +581,7 @@ Süre istatistiklerini alır
 
 ##### Özet
 
-Lists web services
+Web hizmetlerini listeler
 
 ##### Yanıtlar
 
